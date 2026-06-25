@@ -1,0 +1,17 @@
+# Vault docs — repoya gitmez
+CLAUDE.md
+claude.md
+docs/
+*.md
+!README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Superpowers scratch
+.superpowers/
