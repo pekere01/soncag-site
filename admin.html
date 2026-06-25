@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Sonçağ Teknoloji</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/assets/soncag_logo2.png" type="image/png">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+  <main class="admin-page">
+    <div class="container">
+
+      <!-- Login Panel -->
+      <div id="login-panel">
+        <div class="login-box">
+          <h2>Admin Girişi</h2>
+          <p>Sonçağ Teknoloji yönetim paneli</p>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="admin-email">E-posta</label>
+              <input type="email" id="admin-email" name="email" required placeholder="admin@soncag.com">
+            </div>
+            <div class="form-group">
+              <label for="admin-password">Şifre</label>
+              <input type="password" id="admin-password" name="password" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;margin-top:0.5rem">Giriş Yap</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Admin Panel -->
+      <div id="admin-panel" hidden>
+        <div class="admin-header">
+          <h1 style="font-size:1.5rem">Kariyer Yönetimi</h1>
+          <button onclick="AdminPanel.logout()" class="btn btn-outline" style="font-size:0.875rem">Çıkış Yap</button>
+        </div>
+
+        <!-- Jobs table -->
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:0.75rem;overflow:hidden;margin-bottom:2rem">
+          <div style="padding:1.25rem 1.5rem;border-bottom:1px solid var(--border)">
+            <h3 style="font-size:1rem">Tüm Pozisyonlar</h3>
+          </div>
+          <div style="overflow-x:auto">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Pozisyon</th>
+                  <th>Departman</th>
+                  <th>Konum</th>
+                  <th>Tip</th>
+                  <th>Aktif</th>
+                  <th>İşlem</th>
+                </tr>
+              </thead>
+              <tbody id="admin-jobs-tbody">
+                <tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--text-muted)">Yükleniyor...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Add job form -->
+        <div class="add-job-card">
+          <h3>Yeni Pozisyon Ekle</h3>
+          <form id="add-job-form">
+            <div class="add-job-grid">
+              <input type="text" name="title" placeholder="Pozisyon Adı" required>
+              <input type="text" name="department" placeholder="Departman (örn: TEKNİK)" required>
+              <input type="text" name="location" placeholder="Konum (varsayılan: İSTANBUL)">
+              <select name="type">
+                <option value="TAM ZAMANLI">TAM ZAMANLI</option>
+                <option value="PART-TIME">PART-TIME</option>
+                <option value="UZAKTAN">UZAKTAN</option>
+                <option value="STAJ">STAJ</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">+ Pozisyon Ekle</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <div id="footer-mount"></div>
+  <script src="/js/theme.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/admin.js"></script>
+  <script>loadComponents().then(() => AdminPanel.init());</script>
+</body>
+</html>
