@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iscar Kesici Takım — Yetkili Bayi | Sonçağ Teknoloji</title>
+  <meta name="description" content="Iscar kesici takım çözümleri. Sonçağ Teknoloji Iscar yetkili bayisi — tornalama, frezeleme, delik açma ve daha fazlası.">
+  <link rel="icon" href="/assets/soncag_logo2.png" type="image/png">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/solution.css">
+  <style>
+    .iscar-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
+    .iscar-category-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.75rem;
+      padding: 1.5rem; text-align: center; transition: all var(--transition);
+    }
+    .iscar-category-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .iscar-category-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .iscar-category-card h3 { font-size: 0.95rem; margin-bottom: 0.25rem; }
+    .iscar-category-card p { font-size: 0.8rem; color: var(--text-muted); }
+    .authorized-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: color-mix(in srgb, #22c55e 12%, transparent);
+      color: #15803d; border: 1px solid color-mix(in srgb, #22c55e 30%, transparent);
+      padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600;
+    }
+    [data-theme="dark"] .authorized-badge { color: #86efac; }
+  </style>
+</head>
+<body>
+  <div id="header-mount"></div>
+  <main>
+
+    <!-- 1. Hero -->
+    <section class="solution-hero">
+      <div class="container">
+        <div class="solution-hero-inner">
+          <div class="solution-hero-content">
+            <div class="solution-hero-badge" style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem">
+              <span class="badge">Kesici Takım</span>
+              <span class="authorized-badge">✓ Yetkili Bayi</span>
+            </div>
+            <h1>Iscar Kesici Takım</h1>
+            <p class="lead">Dünya lideri kesici takım üreticisi Iscar'ın Türkiye yetkili bayisi. Tornalama, frezeleme ve delik açma için en verimli çözümler.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap">
+              <a href="/iletisim" class="btn btn-primary">Teklif Al</a>
+              <a href="https://www.iscar.com/eCatalog/Index.aspx?GFSTYP=I" target="_blank" rel="noopener" class="btn btn-outline">E-Katalog →</a>
+            </div>
+          </div>
+          <div class="solution-hero-visual" aria-hidden="true">🔩</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Iscar Hakkında -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+          <div>
+            <span class="badge" style="margin-bottom:0.75rem;display:inline-block">Hakkında</span>
+            <h2 class="section-title">Iscar Nedir?</h2>
+            <p style="color:var(--text-muted);margin-bottom:1rem;line-height:1.8">
+              Iscar, 1952'den bu yana İsrail merkezli, IMC Group bünyesinde faaliyet gösteren dünya liderlerinden bir kesici takım üreticisidir.
+              60'tan fazla ülkede satış ve servis ağıyla metal işleme endüstrisine hizmet vermektedir.
+            </p>
+            <p style="color:var(--text-muted);line-height:1.8">
+              Sürekli yenilikçi ürün geliştirme anlayışıyla talaş kaldırma verimliliğini maksimize eden Iscar çözümlerini,
+              Sonçağ Teknoloji yetkili bayi olarak Türkiye'ye taşımaktadır.
+            </p>
+          </div>
+          <div class="grid-3" style="gap:1rem">
+            <div style="text-align:center;padding:1.5rem;background:var(--bg-secondary);border-radius:0.75rem;border:1px solid var(--border)">
+              <div style="font-size:2rem;font-weight:700;color:var(--accent);font-family:'Space Grotesk',sans-serif">1952</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem">Kuruluş</div>
+            </div>
+            <div style="text-align:center;padding:1.5rem;background:var(--bg-secondary);border-radius:0.75rem;border:1px solid var(--border)">
+              <div style="font-size:2rem;font-weight:700;color:var(--accent);font-family:'Space Grotesk',sans-serif">60+</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem">Ülke</div>
+            </div>
+            <div style="text-align:center;padding:1.5rem;background:var(--bg-secondary);border-radius:0.75rem;border:1px solid var(--border)">
+              <div style="font-size:1.2rem;font-weight:700;color:var(--accent);font-family:'Space Grotesk',sans-serif">IMC</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem">Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Ürün Kategorileri -->
+    <section class="section" style="background:var(--bg-secondary)">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Ürün Kategorileri</span>
+          <h2 class="section-title">Kesici Takım Çözümleri</h2>
+        </div>
+        <div class="iscar-categories">
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">⚙️</div>
+            <h3>Tornalama</h3>
+            <p>Turning</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">🔄</div>
+            <h3>Frezeleme</h3>
+            <p>Milling</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">🔩</div>
+            <h3>Delik Açma</h3>
+            <p>Hole Making</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">🔀</div>
+            <h3>Diş Açma</h3>
+            <p>Threading</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">✂️</div>
+            <h3>Talaş Ayırma & Kanal</h3>
+            <p>Parting & Grooving</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">🔧</div>
+            <h3>Takım Tutucular</h3>
+            <p>Toolholding</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">🔬</div>
+            <h3>Mikro Uygulamalar</h3>
+            <p>Miniature</p>
+          </div>
+          <div class="iscar-category-card">
+            <div class="iscar-category-icon">💎</div>
+            <h3>Kesici Kalite Sınıfları</h3>
+            <p>Grades</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Neden Iscar -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Neden Iscar</span>
+          <h2 class="section-title">Fark Yaratan Avantajlar</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div style="font-size:2rem;margin-bottom:0.75rem">⚡</div>
+            <h3 style="margin-bottom:0.5rem">Üstün Performans</h3>
+            <p style="color:var(--text-muted);font-size:0.9rem">Yenilikçi kesici geometrileri ve kaplama teknolojileriyle rakipsiz kesme performansı.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2rem;margin-bottom:0.75rem">⏱️</div>
+            <h3 style="margin-bottom:0.5rem">Uzun Takım Ömrü</h3>
+            <p style="color:var(--text-muted);font-size:0.9rem">Gelişmiş kaplama ve substrat teknolojisiyle takım değişim sıklığını azaltın, duruş sürelerini minimize edin.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:2rem;margin-bottom:0.75rem">📈</div>
+            <h3 style="margin-bottom:0.5rem">Verimlilik Artışı</h3>
+            <p style="color:var(--text-muted);font-size:0.9rem">Yüksek talaş kaldırma hızı ve optimize kesme parametreleriyle birim parça maliyetini düşürün.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. E-Katalog CTA -->
+    <section style="background:var(--bg-secondary);padding:4rem 0;text-align:center">
+      <div class="container">
+        <h2 style="margin-bottom:1rem">Iscar E-Katalog</h2>
+        <p style="color:var(--text-muted);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto">
+          Tüm Iscar ürünlerini, teknik parametrelerini ve uygulama önerilerini online katalogdan inceleyin.
+        </p>
+        <a href="https://www.iscar.com/eCatalog/Index.aspx?GFSTYP=I" target="_blank" rel="noopener" class="btn btn-primary">E-Katalog'u Aç →</a>
+      </div>
+    </section>
+
+    <!-- 6. İletişim CTA -->
+    <section class="solution-cta">
+      <div class="container">
+        <h2>Iscar teklifi alın</h2>
+        <p>Yetkili bayi olarak en uygun fiyat ve hızlı teslimat garantisi sunuyoruz.</p>
+        <a href="/iletisim" class="btn btn-white">Teklif İste →</a>
+      </div>
+    </section>
+
+  </main>
+  <div id="footer-mount"></div>
+  <script src="/js/theme.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/components.js"></script>
+  <script>loadComponents();</script>
+</body>
+</html>
