@@ -1,0 +1,73 @@
+/* Hero */
+.solution-hero {
+  padding: 5rem 0 4rem;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+.solution-hero-inner { display: flex; align-items: center; gap: 3rem; }
+.solution-hero-content { flex: 1; }
+.solution-hero-badge { margin-bottom: 1rem; }
+.solution-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+.solution-hero .lead { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 560px; }
+.solution-hero-visual {
+  flex: 0 0 320px;
+  height: 280px;
+  border-radius: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+/* Feature list */
+.feature-item { display: flex; gap: 1rem; align-items: flex-start; }
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.625rem;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+.feature-item h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+.feature-item p { color: var(--text-muted); font-size: 0.875rem; }
+
+/* For whom */
+.for-whom { background: var(--bg-secondary); }
+.sector-tag {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+.sector-tag:hover { border-color: var(--accent); color: var(--accent); }
+.sector-tags { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Why with Soncag */
+.why-soncag-box {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* CTA */
+.solution-cta { background: var(--accent); color: #fff; text-align: center; padding: 4rem 0; }
+.solution-cta h2 { margin-bottom: 1rem; }
+.solution-cta p { opacity: 0.85; margin-bottom: 2rem; }
+.btn-white { background: #fff; color: var(--accent); }
+.btn-white:hover { background: #f0f0f0; }
+
+@media (max-width: 768px) {
+  .solution-hero-inner { flex-direction: column; }
+  .solution-hero-visual { flex: none; width: 100%; height: 180px; }
+}
