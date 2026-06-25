@@ -1,0 +1,36 @@
+{
+  "nav.home": "Ana Sayfa",
+  "nav.solutions": "Çözümler",
+  "nav.about": "Hakkımızda",
+  "nav.career": "Kariyer",
+  "nav.contact": "İletişim",
+  "nav.cta": "Teklif Al",
+
+  "footer.rights": "Tüm hakları saklıdır.",
+  "footer.address.label": "Adres",
+  "footer.phone.label": "Telefon",
+  "footer.email.label": "E-posta",
+
+  "hero.slogan": "Mühendisliğin Dijital Formu",
+  "hero.sub": "CAD, CAM, PDM ve kesici takım çözümlerinde Türkiye'nin güvenilir teknoloji ortağı.",
+  "hero.cta1": "Çözümleri Keşfet",
+  "hero.cta2": "İletişime Geç",
+
+  "contact.form.name": "Ad Soyad",
+  "contact.form.company": "Firma",
+  "contact.form.email": "E-posta",
+  "contact.form.phone": "Telefon",
+  "contact.form.subject": "Konu",
+  "contact.form.message": "Mesaj",
+  "contact.form.submit": "Gönder",
+  "contact.form.success": "Mesajınız iletildi. En kısa sürede dönüş yapacağız.",
+  "contact.form.error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+
+  "career.no_positions": "Şu an açık pozisyonumuz bulunmamaktadır.",
+  "career.apply": "Başvur",
+
+  "solutions.cad": "CAD Tasarım",
+  "solutions.cam": "CAM & CNC",
+  "solutions.pdm": "PDM & Süreç",
+  "solutions.cutting": "Kesici Takım"
+}

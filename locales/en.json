@@ -1,0 +1,36 @@
+{
+  "nav.home": "Home",
+  "nav.solutions": "Solutions",
+  "nav.about": "About",
+  "nav.career": "Career",
+  "nav.contact": "Contact",
+  "nav.cta": "Get a Quote",
+
+  "footer.rights": "All rights reserved.",
+  "footer.address.label": "Address",
+  "footer.phone.label": "Phone",
+  "footer.email.label": "Email",
+
+  "hero.slogan": "The Digital Form of Engineering",
+  "hero.sub": "Your trusted technology partner in CAD, CAM, PDM and cutting tool solutions.",
+  "hero.cta1": "Explore Solutions",
+  "hero.cta2": "Contact Us",
+
+  "contact.form.name": "Full Name",
+  "contact.form.company": "Company",
+  "contact.form.email": "Email",
+  "contact.form.phone": "Phone",
+  "contact.form.subject": "Subject",
+  "contact.form.message": "Message",
+  "contact.form.submit": "Send",
+  "contact.form.success": "Your message has been sent. We will get back to you shortly.",
+  "contact.form.error": "An error occurred. Please try again.",
+
+  "career.no_positions": "There are no open positions at the moment.",
+  "career.apply": "Apply",
+
+  "solutions.cad": "CAD Design",
+  "solutions.cam": "CAM & CNC",
+  "solutions.pdm": "PDM & Process",
+  "solutions.cutting": "Cutting Tools"
+}
