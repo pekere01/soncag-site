@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim — Sonçağ Teknoloji</title>
+  <meta name="description" content="Sonçağ Teknoloji ile iletişime geçin. Teklif, demo ve teknik destek için formu doldurun.">
+  <link rel="icon" href="/assets/soncag_logo2.png" type="image/png">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+  <main>
+
+    <!-- Hero -->
+    <section style="padding:3rem 0 2rem;background:var(--bg-secondary);border-bottom:1px solid var(--border)">
+      <div class="container">
+        <span class="badge" style="margin-bottom:0.75rem;display:inline-block">İletişim</span>
+        <h1 style="font-size:clamp(1.75rem,3vw,2.5rem);margin-bottom:0.75rem">Bizimle İletişime Geçin</h1>
+        <p style="color:var(--text-muted);font-size:1.05rem">Teklif, demo ve teknik destek talepleriniz için formu doldurun.</p>
+      </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Sol: İletişim bilgileri -->
+          <div class="contact-info">
+            <h2>İletişim Bilgileri</h2>
+            <p>Ekibimiz en kısa sürede size dönüş yapacaktır.</p>
+
+            <div class="contact-detail">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4 data-i18n="footer.address.label">Adres</h4>
+                <p>İstanbul, Türkiye</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4 data-i18n="footer.phone.label">Telefon</h4>
+                <a href="tel:+90XXXXXXXXXX">+90 (XXX) XXX XX XX</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4 data-i18n="footer.email.label">E-posta</h4>
+                <a href="mailto:info@soncag.com">info@soncag.com</a>
+              </div>
+            </div>
+
+            <div style="margin-top:2rem;padding:1.5rem;background:var(--bg-secondary);border-radius:0.75rem;border:1px solid var(--border)">
+              <h4 style="margin-bottom:0.5rem;font-size:0.875rem">Çalışma Saatleri</h4>
+              <p style="color:var(--text-muted);font-size:0.875rem">Pazartesi – Cuma: 09:00 – 18:00</p>
+            </div>
+          </div>
+
+          <!-- Sağ: Form -->
+          <div class="contact-form-card">
+            <h3>Mesaj Gönderin</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="from_name" data-i18n="contact.form.name">Ad Soyad</label>
+                  <input type="text" id="from_name" name="from_name" required data-i18n-placeholder="contact.form.name">
+                </div>
+                <div class="form-group">
+                  <label for="company" data-i18n="contact.form.company">Firma</label>
+                  <input type="text" id="company" name="company" data-i18n-placeholder="contact.form.company">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="from_email" data-i18n="contact.form.email">E-posta</label>
+                  <input type="email" id="from_email" name="from_email" required data-i18n-placeholder="contact.form.email">
+                </div>
+                <div class="form-group">
+                  <label for="phone" data-i18n="contact.form.phone">Telefon</label>
+                  <input type="tel" id="phone" name="phone" data-i18n-placeholder="contact.form.phone">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" data-i18n="contact.form.subject">Konu</label>
+                <input type="text" id="subject" name="subject" data-i18n-placeholder="contact.form.subject">
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Mesaj</label>
+                <textarea id="message" name="message" required data-i18n-placeholder="contact.form.message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="contact.form.submit">Gönder</button>
+              <div id="form-success" class="form-status" data-i18n="contact.form.success">Mesajınız iletildi.</div>
+              <div id="form-error" class="form-status" data-i18n="contact.form.error">Bir hata oluştu.</div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div id="footer-mount"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/contact.js"></script>
+  <script>loadComponents().then(() => Contact.init());</script>
+</body>
+</html>
