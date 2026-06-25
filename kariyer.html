@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kariyer — Sonçağ Teknoloji</title>
+  <meta name="description" content="Sonçağ Teknoloji kariyer fırsatları. Açık pozisyonları görüntüleyin ve başvurun.">
+  <link rel="icon" href="/assets/soncag_logo2.png" type="image/png">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <style>
+    .career-hero { padding: 3rem 0 2rem; background: var(--bg-secondary); border-bottom: 1px solid var(--border); }
+    .job-card { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .job-title { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .job-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+    .job-tag { font-size: 0.875rem; color: var(--text-muted); }
+    .career-empty { text-align: center; padding: 4rem 2rem; color: var(--text-muted); font-size: 1.05rem; }
+    .btn-sm { padding: 0.5rem 1.25rem; font-size: 0.875rem; }
+    #jobs-list { display: flex; flex-direction: column; gap: 1rem; }
+  </style>
+</head>
+<body>
+  <div id="header-mount"></div>
+  <main>
+
+    <section class="career-hero">
+      <div class="container">
+        <span class="badge" style="margin-bottom:0.75rem;display:inline-block">Kariyer</span>
+        <h1 style="font-size:clamp(1.75rem,3vw,2.5rem);margin-bottom:0.75rem">Ekibimize Katılın</h1>
+        <p style="color:var(--text-muted);font-size:1.05rem;max-width:560px">
+          Mühendislik teknolojileri alanında kariyer fırsatları. Yetenekli ve tutkulu profesyonelleri arıyoruz.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Açık Pozisyonlar</span>
+          <h2 class="section-title" id="pozisyonlar">Mevcut İş İlanları</h2>
+        </div>
+        <div id="jobs-list">
+          <p style="text-align:center;padding:2rem;color:var(--text-muted)">Yükleniyor...</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--bg-secondary);padding:4rem 0">
+      <div class="container" style="max-width:600px;text-align:center">
+        <h2 style="margin-bottom:1rem">Uygun pozisyon bulamadınız mı?</h2>
+        <p style="color:var(--text-muted);margin-bottom:2rem">
+          Açık pozisyon olmasa bile CV'nizi bize iletebilirsiniz. Uygun bir pozisyon açıldığında sizinle iletişime geçeriz.
+        </p>
+        <a href="/iletisim" class="btn btn-primary">CV Gönder →</a>
+      </div>
+    </section>
+
+  </main>
+  <div id="footer-mount"></div>
+  <script src="/js/theme.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/career.js"></script>
+  <script>loadComponents().then(() => Career.init());</script>
+</body>
+</html>
