@@ -1,0 +1,47 @@
+<header id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="header-logo">
+      <img src="/assets/soncag_logo.png" alt="Sonçağ Teknoloji" class="logo-main">
+    </a>
+
+    <nav id="nav-menu" role="navigation">
+      <a href="/" class="nav-link" data-i18n="nav.home"></a>
+
+      <div class="nav-dropdown">
+        <a href="/cozumler" class="nav-link" data-i18n="nav.solutions"></a>
+        <div class="nav-dropdown-menu">
+          <a href="/cozumler/solidworks">SOLIDWORKS</a>
+          <a href="/cozumler/solidcam">SolidCAM</a>
+          <a href="/cozumler/cimatron">Cimatron</a>
+          <a href="/cozumler/draftsight">DraftSight</a>
+          <a href="/cozumler/3dexperience">3DEXPERIENCE</a>
+          <a href="/cozumler/swood">SWOOD</a>
+          <a href="/cozumler/tekyazxpert">TEKYAZXpert</a>
+          <hr style="border-color:var(--border);margin:0.25rem 0">
+          <a href="/iscar">Iscar Kesici Takım</a>
+        </div>
+      </div>
+
+      <a href="/hakkimizda" class="nav-link" data-i18n="nav.about"></a>
+      <a href="/kariyer" class="nav-link" data-i18n="nav.career"></a>
+      <a href="/iletisim" class="nav-link" data-i18n="nav.contact"></a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" onclick="Theme.toggle()" aria-label="Tema değiştir">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+      <button id="lang-toggle" onclick="I18n.setLang(document.documentElement.lang==='tr'?'en':'tr')">TR</button>
+      <a href="/iletisim" class="btn btn-primary" data-i18n="nav.cta"></a>
+      <button id="nav-burger" aria-expanded="false" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
