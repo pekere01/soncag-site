@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sonçağ Teknoloji — Mühendisliğin Dijital Formu</title>
+  <title>Sonçağ Mühendislik — Mühendisliğin Dijital Formu</title>
   <meta name="description" content="CAD, CAM, PDM ve kesici takım çözümlerinde Türkiye'nin güvenilir teknoloji ortağı. SOLIDWORKS, SolidCAM, Iscar yetkili bayisi.">
+  <meta property="og:title" content="Sonçağ Mühendislik — Mühendisliğin Dijital Formu">
+  <meta property="og:description" content="CAD, CAM, PDM ve kesici takım çözümlerinde Türkiye'nin güvenilir teknoloji ortağı. SOLIDWORKS, SolidCAM, Iscar yetkili bayisi.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
   <link rel="icon" href="/assets/soncag_logo2.png" type="image/png">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/variables.css">
@@ -13,6 +17,7 @@
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/animations.css">
 </head>
 <body>
   <div id="header-mount"></div>
@@ -20,6 +25,20 @@
   <main>
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-video-bg">
+        <!-- CNC machining background video (muted autoplay loop) -->
+        <iframe
+          src="https://www.youtube.com/embed/AsiIU7ZKjHM?autoplay=1&mute=1&loop=1&playlist=AsiIU7ZKjHM&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&disablekb=1&fs=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          title="background"
+          aria-hidden="true"
+        ></iframe>
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-glow-2"></div>
+        <div class="hero-overlay"></div>
+      </div>
       <div class="container">
         <div class="hero-content">
           <div class="hero-badge">
@@ -40,27 +59,27 @@
     <!-- Odak Alanları -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-animate="fade-up">
           <span class="badge">Ne Sunuyoruz</span>
           <h2 class="section-title">Uzmanlık Alanlarımız</h2>
         </div>
         <div class="grid-4">
-          <div class="card focus-card">
+          <div class="card focus-card" data-animate="fade-up" data-delay="100">
             <div class="focus-icon">⚙️</div>
             <h3 data-i18n="solutions.cad">CAD Tasarım</h3>
             <p>SOLIDWORKS, DraftSight, Cimatron ile profesyonel 3D/2D tasarım çözümleri.</p>
           </div>
-          <div class="card focus-card">
+          <div class="card focus-card" data-animate="fade-up" data-delay="200">
             <div class="focus-icon">🔧</div>
             <h3 data-i18n="solutions.cam">CAM & CNC</h3>
             <p>SolidCAM, Fikus VisualCAM ile dijital imalat ve CNC programlama.</p>
           </div>
-          <div class="card focus-card">
+          <div class="card focus-card" data-animate="fade-up" data-delay="300">
             <div class="focus-icon">📊</div>
             <h3 data-i18n="solutions.pdm">PDM & Süreç</h3>
             <p>TEKYAZXpert, TEKYAZ Connector ile süreç otomasyonu ve PDM-ERP entegrasyonu.</p>
           </div>
-          <div class="card focus-card">
+          <div class="card focus-card" data-animate="fade-up" data-delay="400">
             <div class="focus-icon">🔩</div>
             <h3 data-i18n="solutions.cutting">Kesici Takım</h3>
             <p>Iscar yetkili bayisi olarak dünya lideri kesici takım çözümleri.</p>
@@ -72,49 +91,56 @@
     <!-- Ana Çözümler -->
     <section class="section" style="background: var(--bg-secondary);">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-animate="fade-up">
           <span class="badge">Ana Çözümler</span>
           <h2 class="section-title">Yazılım Portföyümüz</h2>
           <p class="section-subtitle">Dassault Systèmes ve Tekyaz ürünlerinin yetkili distribütörü olarak tam kapsamlı destek sunuyoruz.</p>
         </div>
         <div class="grid-3">
-          <a href="/cozumler/solidworks" class="card solution-card">
+          <a href="/cozumler/solidworks" class="card solution-card" data-animate="fade-up" data-delay="100">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/solidworks.com" alt="SOLIDWORKS" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">3D CAD</span>
             <h3>SOLIDWORKS</h3>
             <p>Endüstrinin standartı 3D tasarım ve mühendislik platformu.</p>
             <span>Detaylar →</span>
           </a>
-          <a href="/cozumler/solidcam" class="card solution-card">
+          <a href="/cozumler/solidcam" class="card solution-card" data-animate="fade-up" data-delay="200">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/solidcam.com" alt="SolidCAM" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">CAM</span>
             <h3>SolidCAM</h3>
             <p>SOLIDWORKS entegre, tam kapsamlı CAM ve CNC programlama çözümü.</p>
             <span>Detaylar →</span>
           </a>
-          <a href="/cozumler/cimatron" class="card solution-card">
+          <a href="/cozumler/cimatron" class="card solution-card" data-animate="fade-up" data-delay="300">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/cimatron.com" alt="Cimatron" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">Kalıp CAD/CAM</span>
             <h3>Cimatron</h3>
             <p>Endüstriyel kalıp tasarımı ve üretiminde uzmanlaşmış platform.</p>
             <span>Detaylar →</span>
           </a>
-          <a href="/cozumler/draftsight" class="card solution-card">
+          <a href="/cozumler/draftsight" class="card solution-card" data-animate="fade-up" data-delay="100">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/draftsight.com" alt="DraftSight" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">2D CAD</span>
             <h3>DraftSight</h3>
             <p>Profesyonel 2D CAD — DWG uyumlu, maliyet etkin çözüm.</p>
             <span>Detaylar →</span>
           </a>
-          <a href="/cozumler/3dexperience" class="card solution-card">
+          <a href="/cozumler/3dexperience" class="card solution-card" data-animate="fade-up" data-delay="200">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/3ds.com" alt="3DEXPERIENCE" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">Bulut PLM</span>
             <h3>3DEXPERIENCE</h3>
             <p>Bulut tabanlı iş birliği ve ürün yaşam döngüsü yönetimi platformu.</p>
             <span>Detaylar →</span>
           </a>
-          <a href="/cozumler/tekyazxpert" class="card solution-card">
+          <a href="/cozumler/tekyazxpert" class="card solution-card" data-animate="fade-up" data-delay="300">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/tekyaz.com" alt="TEKYAZXpert" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">Süreç Otomasyonu</span>
             <h3>TEKYAZXpert</h3>
             <p>Mühendislik süreçlerini otomatikleştiren yerli yazılım çözümü.</p>
             <span>Detaylar →</span>
           </a>
-          <a href="/cozumler/swood" class="card solution-card">
+          <a href="/cozumler/swood" class="card solution-card" data-animate="fade-up" data-delay="100">
+            <div class="card-logo-wrap"><img class="card-logo" src="https://logo.clearbit.com/swood.biz" alt="SWOOD" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
             <span class="product-tag">Ahşap CAD/CAM</span>
             <h3>SWOOD</h3>
             <p>SOLIDWORKS tabanlı, akıllı ahşap tasarımı ve üretim çözümü.</p>
@@ -130,26 +156,26 @@
     <!-- Neden Sonçağ -->
     <section class="section why-soncag">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-animate="fade-up">
           <span class="badge">Neden Sonçağ</span>
           <h2 class="section-title">Farkımız</h2>
         </div>
         <div class="grid-3">
-          <div class="why-item">
+          <div class="why-item" data-animate="fade-left" data-delay="100">
             <span class="why-number">01</span>
             <div>
               <h3>Yetkili Bayi & Distribütör</h3>
               <p class="text-muted">SOLIDWORKS, SolidCAM, Iscar ve Tekyaz ürünleri için resmi yetkili — orijinal lisans, garanti ve destek güvencesi.</p>
             </div>
           </div>
-          <div class="why-item">
+          <div class="why-item" data-animate="fade-up" data-delay="200">
             <span class="why-number">02</span>
             <div>
               <h3>Teknik Uzmanlık</h3>
               <p class="text-muted">Sertifikalı mühendisler, kurulum, eğitim ve sürekli teknik destek ile yanınızda.</p>
             </div>
           </div>
-          <div class="why-item">
+          <div class="why-item" data-animate="fade-right" data-delay="300">
             <span class="why-number">03</span>
             <div>
               <h3>Tam Kapsamlı Çözüm</h3>
@@ -160,22 +186,9 @@
       </div>
     </section>
 
-    <!-- Bayilikler -->
-    <section class="section-sm">
-      <div class="container" style="text-align:center">
-        <p class="text-muted" style="margin-bottom:1.5rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;font-size:0.8rem;">Yetkili Bayi & Distribütör</p>
-        <div class="partner-logos">
-          <a href="/cozumler/solidworks" class="partner-logo">SOLIDWORKS</a>
-          <a href="/cozumler/solidcam" class="partner-logo">SolidCAM</a>
-          <a href="/iscar" class="partner-logo">ISCAR</a>
-          <a href="/cozumler/tekyazxpert" class="partner-logo">TEKYAZ</a>
-          <a href="/cozumler/3dexperience" class="partner-logo">Dassault Systèmes</a>
-        </div>
-      </div>
-    </section>
 
     <!-- CTA -->
-    <section class="cta-banner">
+    <section class="cta-banner" data-animate="zoom-in">
       <div class="container">
         <h2>Projeniz için doğru çözümü bulalım</h2>
         <p>Teknik ekibimiz ihtiyaçlarınızı dinleyip size özel teklif hazırlar.</p>
@@ -191,5 +204,6 @@
   <script src="/js/nav.js"></script>
   <script src="/js/components.js"></script>
   <script>loadComponents();</script>
+  <script src="/js/animations.js"></script>
 </body>
 </html>
